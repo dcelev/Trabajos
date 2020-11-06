@@ -1,0 +1,53 @@
+for(var i=0; i<5;i++){   
+   console.log(i);
+}
+
+0,1,2,3,4
+
+for(var i=0; i<5; i++)
+{
+   i = i + 1;  
+   console.log(i);
+}
+
+1,3,5
+
+for(var i=0; i<5; i++)                   
+{
+   i = i + 3;                               3 = i + 3
+   console.log(i);
+}
+
+3,7
+
+function y(num1, num2){                     num1=2,3 
+   return num1+num2;                        num2=3,5
+}
+console.log(y(2,3))
+console.log(y(3,5))
+
+5,8
+
+a = 15;
+console.log(a);
+function y(a){                               y=10
+   console.log(a);                   
+   return a;
+}
+b = y(10);
+console.log(b);
+
+15,10,10
+
+
+
+a = 15;
+console.log(a);
+function y(a){                            y=10
+   console.log(a);                        
+   return a*2;                            y=10*2     
+}
+b = y(10);
+console.log(b);
+
+15,10,20

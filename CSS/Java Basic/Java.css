@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 10px;
+    border-color: blue;
+    border-width: 0px;
+    border-style: dotted;
+}
+
+* {
+    font-family: 'Frank Ruehl BT Std Regular';
+    color: #c2d6eb;
+    text-align: left;
+}
+
+#head,
+#menu,
+#body,
+#url {
+    border-radius: 12px;
+}
+
+#todo {
+    background-color: #1b345d;
+    margin: 10px;
+    padding: 10px;
+    height: 700px;
+    width: 970px;
+}
+
+#head {
+    line-height: 15px;
+    width: 890px;
+    height: 65px;
+    background-color: #cf3036;
+    margin: 25px 10px 15px 33px;
+    display: inline-block
+}
+
+#menu.texto1 {
+    background-color: #2a7d8c;
+    width: 200px;
+    height: 300px;
+    margin: 0px 42px 20px 35px;
+    padding-left: 15px;
+    line-height: 4px;  
+    vertical-align: top;
+    display: inline-block
+}
+
+#body {
+    background-color: #0e1822;
+    width: 620px;
+    height: 460px;
+    margin: 0px 20px 20px 0px;
+    padding: 10px;
+    font-size: 80%;
+    line-height: 12px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#url {
+    background-color: #5d6673;
+    width: 897px;
+    height: 50px;
+    margin: 5px 10px 10px 26px;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    color: purple;
+}
+
+.test {
+    color: #c2d6ec;
+}
+
+.textop {
+    font-size: 12px;
+}
+
+a {
+    color: rgb(0, 183, 255);
+}
+
+samp{
+    color: #585fcc;
+}
+
+#menutxt{
+    font-size: 80%;
+}
+
+ul li{
+    padding: 7px;
+}
+
+ul{
+    margin: 0px;
+}

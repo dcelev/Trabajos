@@ -1,0 +1,152 @@
+1)function multiply(x,y) {
+    console.log(x);            2
+    console.log(y);            3
+}
+b = multiply(2,3);
+console.log(b);   
+
+--2
+--3
+
+
+2)function multiply(x,y) {
+    return x*y;             2*3=6//5*2
+}
+b = multiply(2,3);
+console.log(b);                  6
+console.log(multiply(5,2));      10
+
+--6
+--10
+
+
+3)var x = [1,2,3,4,5,10];
+for(var i=0; i<5; i++) {      3+1
+   i = i + 3;                 0+3//4+3
+   console.log(i);
+}
+
+--3
+--7
+
+
+4)var x=15;
+console.log(x);             15
+function awesome(){
+    var x=10;
+    console.log(x);         10
+}
+console.log(x);             15
+awesome();                  10
+console.log(x);             15
+
+--15
+--10
+--15
+--10
+--15
+
+
+5)for(var i=0; i<15; i+=2) {
+   console.log(i);
+}
+
+--0,2,4,6,8,10,12,14
+
+
+6)for(var i=0; i<3; i++) {
+   for(var j=0; j<2; j++) {       
+       console.log(i*j);
+   }
+}
+
+--
+
+7)function looping(x,y) {             x=3,y=3
+   for(var i=0; i<x; i++) {
+      for(var j=0; j<x; j++) {         
+          console.log(i*j);
+      } 
+   }
+}
+z = looping(3,3);
+console.log(z);             indefinido
+
+
+--0,0,0,0,1,0,2,4
+
+
+8)function looping(x,y) {            x=3,y=5
+   for(var i=0; i<x; i++) {
+      for(var j=0; j<y; j++) {         
+         console.log(i*j);
+      } 
+   }
+   return x*y;
+}
+z = looping(3,5);
+console.log(z);
+
+--0,0,0,0,0,1,2,3,4,0,2,4,6,8,1511:47 20-10-2020
+
+
+II
+1)function printUpTo(x) { //x=-10
+    // your code here
+    if (x < 0) {
+        console.log(false)
+        return false;
+    }
+    for (var i = 1; i <= 1000; i++) { //i=1>2>3>4...999>1000>1001
+        console.log(i); //1,2,3...999,1000
+    }
+
+}
+printUpTo(1000); // debería imprimir todos los enteros de 1 to 1000
+
+y = printUpTo(-10); // false
+console.log(y);
+
+
+
+2)function printSum(x) {
+  var sum = 0;
+  
+  for(var i = 0; i<=x; i++){
+    console.log(i);
+    
+    sum = sum + i;
+    console.log(sum);
+  }
+  return sum
+}
+y = printSum(255) //debería imprimir todos los enteros de 0 a 255 y que cada entero imprima la suma parcial.copy
+console.log(y) // debería imprimir 32640
+
+
+
+//Completa el código a continuación para que la 
+función entregue la suma de todos los valores en un array dado.
+
+3)function printSumArray(x) {
+  var sum = 0;
+  for(var i=0; i<x.length; i++) {
+    //your code here
+  sum += x[i];
+  }
+  return sum;
+}
+console.log( printSumArray([1,2,3]) ); // debería imprimir 6
+
+
+
+
+
+
+
+
+
+
+
+
+

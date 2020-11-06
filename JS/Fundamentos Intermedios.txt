@@ -1,0 +1,25 @@
+//Array: 
+//Segundo más grande: Devuelve el segundo elemento más grande de un array. Dado [42,1,4,3.14,7], devuelve 7.  
+//Si el array es muy pequeño, devuelve null.
+
+function iteracion(arr){
+
+    var max = arr[0];
+    if(arr>arr.length){
+      return null;
+    }
+    for(var i=0;i<arr.length;i++){
+        if (arr[i]>=max){          
+            max =arr[i];
+            for(var j=0;i<arr.length;i++){
+                if (arr[i]!=max){         
+                    max =arr[i];          
+                }
+            }
+        
+        }
+    }
+    return max;
+}
+iteracion(arr=[42,1,4,3.14,7]);
+console.log(iteracion(arr));

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid blue;
+        }
+        
+        th,
+        td {
+            padding: 6px;
+        }
+    </style>
+    <!--meta charset utf-8 es para poder escribir caracteres como ñ y otros puedan ser ocupados en la pagina(por cantidad de bites)-->
+    <title> Blog Personal </title>
+</head>
+
+<body>
+    <div>
+        <h1> Daniel Celedón </h1>
+        <br>
+        <img src="noface.jpg" alt="Not Face" width="400" height="250">
+        <br>
+        <p>Soy Daniel Celedón, tengo 21 años, mis pasatiempos son jugar a la pelota,<br> escuchar musica y salir a andar en bicicleta con amigos.</p>
+        <!-- &nbsp; Para generar espacios horizontal-->
+    </div>
+    <br>
+    <table style="width: 33%">
+        <thead>
+            <tr>
+                <th>Discos</th>
+                <th>años</th>
+                <th>Artista</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mi Sangre</td>
+                <td>2004</td>
+                <td>Juanes</td>
+            </tr>
+            <tr>
+                <td>Discovery</td>
+                <td>1979</td>
+                <td>Elo</td>
+            </tr>
+            <tr>
+                <td>Extended Play</td>
+                <td>2011</td>
+                <td>Sticky Fingers</td>
+            </tr>
+            <tr>
+                <td>The Wall</td>
+                <td>1979</td>
+                <td>Pink Floyd</td>
+            </tr>
+            <tr>
+                <td>Nada Personal</td>
+                <td>1985</td>
+                <td>Soda Stereo</td>
+            </tr>
+            <tr>
+                <td>Bad</td>
+                <td>1987</td>
+                <td>Michael Jackson</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h3>Cancion Popular de Cada Album:</h3>
+    <ul>
+        <li>Juanes - La Camisa Negra</li>
+        <li>Elo - Last Train To London</li>
+        <li>Sticky Fingers - Headlock</li>
+        <li>Pink Floyd - Comfortably Numb</li>
+        <li>Soda Stereo - Juegos De Seducción</li>
+        <li>Michael Jackson - I Just Can't Stop Loving You</li>
+    </ul>
+    <div>
+        <a href="https://youtu.be/YR5ApYxkU-U" target="_blank">Another Brick In The Wall</a>
+    </div>
+    <br>
+    <h2>Por favor, Contestar Encuesta:</h2>
+    <label for="Email">Email:</label>
+    <input type="text" id="Email" name="Email">
+    <br><br>
+    <input type="radio" id="sub" name="sub" value="subscribir">
+    <label for="sub">Subscribirme a esta página</label>
+    <br>
+    <input type="radio" id="nosub" name="sub" value="not_sub">
+    <label for="nosub">No subscribirme a esta página</label>
+    <br><br>
+    <p>¿Como supiste de nuestra página></p>
+    <br>
+    <input type="checkbox" id="Gmail" name="Encuesta" value="Gmail">
+    <label for="Gmail">Correo Electronico</label>
+    <br>
+    <input type="checkbox" id="IG" name="Encuesta" value="IG">
+    <label for="IG">Instagram</label>
+    <br>
+    <input type="checkbox" id="Facebook" name="Encuesta" value="Facebook">
+    <label for="Facebook">Facebook</label>
+    <br><br>
+    <input type="submit" value="Enviar">
+</body>
+
+</html>

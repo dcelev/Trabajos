@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Formulario" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="process.php" method="post">
+        <h2>Mi Formulario de Registro</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+            <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+            <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br><br>
+        <label for="Contraseña">Contraseña:</label>
+        <input type="password" id="Contraseña" name="Contraseña">
+            <br><br>
+        <label for="Confirmar">Confirmar:</label>
+        <input type="password" id="Confirmar" name="Confirmar">
+        <br><br>
+        <label for="cumpleaños">Cumpleaños:</label>
+        <input type="date" id="cumpleaños" name="cumpleaños">
+            <br><br>
+        <input type="radio" id="Hombre" name="genero" value="Hombre">
+        <label for="Hombre">Hombre</label>
+        <input type="radio" id="Mujer" name="genero" value="Mujer">
+        <label for="Mujer">Mujer</label>
+        <input type="radio" id="Otro" name="genero" value="Otro">
+        <label for="Otro">Otro</label>
+            <br>
+        <p>Una Breve Descripción de ti:</p>
+        <textarea name="descripcion" rows="6" cols="35"></textarea>
+            <br><br>
+        <label for="nombre">Lenguaje Favorito</label>
+        <select name="Lenguaje Favorito" id="Lenguaje">
+            <option value="Java">Java</option>
+            <option value="Phython">Phython</option>
+            <option value="Ruso">Ruso</option>
+            <option value="Binarie">Binarie</option>
+        </select>
+            <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
