@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Ninja a Gato</title>
+    <link rel="stylesheet" href="NaG.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).attr('alt',$(this).attr('src'));  
+                $(this).attr('src',$(this).attr('data-alt-src'));  
+                $(this).attr('data-alt-src',$(this).attr('alt'));  
+    });
+});
+    </script>
+</head>
+<body>
+
+    <img src='img/n.png' data-alt-src='img/c.png'/>
+    <img src='img/n1.png' data-alt-src='img/c1.png'/>
+    <img src='img/n2.png' data-alt-src='img/c2.png'/>
+    <img src='img/n3.png' data-alt-src='img/c3.png'/>
+    <img src='img/n4.png' data-alt-src='img/c4.png'/>
+</div>
+</body>
+</html>
