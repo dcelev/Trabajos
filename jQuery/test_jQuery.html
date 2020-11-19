@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="jquery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#addclass').click(function(){
+                $('.addclass').addClass('newclass');
+            })
+            $('#Append').click(function (){
+                $('#textapp').append('<br> Texto agregado despues del click');
+            })
+            $('#Click').click(function(){
+                //$('.Click').css('color','red'); asi se cambia un color
+                alert('Haz hecho click O.O');
+            })
+            $('#Hide').click(function(){
+                $('#HideP').hide(this);
+            })
+            $('#Show').click(function(){
+                $('#HideP').show(this);
+            })
+            $('#Toggle').click(function(){
+                $('#ptoggle').toggle('slow');
+            })
+            $('#SlideUp').click(function(){
+                $('.SlideUp').slideUp('slow');
+            })
+            $('#SlideDown').click(function(){
+                $('.SlideUp').slideDown('fast');
+            })
+            $('#SlideToggle').click(function(){
+                $('p').slideToggle('fast');
+            })
+            $('#Fadeout').click(function(){
+                $('h1').fadeOut();
+            })
+            $('#Fadein').click(function(){
+                $('h1').fadeIn();
+            })
+            $('#After').click(function(){
+                $('#pafter').after('<p>Parrafo agregado por after</p>')
+            })
+            $('#Before').click(function(){
+                $('#pbefore').before('<p>Parrafo agregado por before</p>')
+            })
+            $('#Html').click(function(){
+                $('#h1html').html('<strong>Hola, Aqui corre Html</strong>')
+            })
+            $('#Attr').click(function(){
+                $('#Attr').attr('value','Otro Texto')
+            })
+            $('#Val').click(function(){
+                $('#Attr').val('valor10')
+            })
+            $('#Text').click(function(){
+                $('#Text').text('Nuevo Texto')
+            })
+
+
+    }); 
+    </script>
+
+</head>
+<body>
+<div class="addclass">
+    <button id="addclass">AddClass</button>
+    <aside>
+    <h1>AddClass</h1>
+    <p>Agregar la clase a uno o mas elementos.</p>
+    </aside>
+</div>
+<hr>
+<div class="Append">
+    <button id="Append">Append</button>
+    <aside>
+    <h1>Append</h1>
+    <p id="textapp">Inserte contenido, especificado por el parámetro, 
+        al final de cada elemento en el conjunto de elementos coincidentes.</p>
+    </aside>    
+</div>
+<hr>
+<div class="Click">
+    <button id="Click">Click</button>
+    <aside>
+    <h1>Click</h1>
+    <p>Vincula un controlador de eventos al evento de JavaScript "clic" 
+        o activa ese evento en un elemento.(Ejemplo, activar una alerta)</p>
+    </aside>   
+</div>
+<hr>
+<div class="Hide">
+    <button id="Hide">Hide</button>
+    <aside>
+    <h1>Hide</h1>
+    <p id="HideP">Ocultar los elementos coincidentes.<br>Como por ejemplo este párrafo</p>
+    </aside>   
+</div>
+<hr>
+<div class="Show">
+    <button id="Show">Show</button>
+    <aside>
+    <h1>Show</h1>
+    <p>Muestra los elementos coincidentes.<br>Como por ejemplo el párrafo ocultado arriba ;)</p>
+    </aside>   
+</div>
+<hr>
+<div class="Toggle">
+    <button id="Toggle">Toggle</button>
+    <aside id="ptoggle">
+    <h1>Toggle</h1>
+    <p>Muestre u oculte los elementos coincidentes.<br>Como este h1 y p.</p>
+    </aside>   
+</div>
+<hr>
+<div class="SlideUp">
+    <button id="SlideUp">SlideUp</button>
+    <aside>
+    <h1>SlideUp</h1>
+    <p>Oculte los elementos emparejados con un movimiento deslizante.</p>
+    </aside>   
+</div>
+<hr>
+<div class="SlideDown">
+    <button id="SlideDown">SlideDown</button>
+    <aside>
+    <h1>SlideDown</h1>
+    <p id="slidedw">Muestre los elementos emparejados con un movimiento deslizante.</p>
+    </aside>   
+</div>
+<hr>
+<div class="SlideToggle">
+    <button id="SlideToggle">SlideToggle</button>
+    <aside>
+    <h1>SlideToggle</h1>
+    <p>Muestre u oculte los elementos emparejados con un movimiento deslizante.<br>Como todos los parrafos de arriba.</p>
+    </aside>   
+</div>
+<hr>
+<div class="Fadeout">
+    <button id="Fadeout">Fadeout</button>
+    <aside>
+    <h1>Fadeout</h1>
+    <p>El efecto fadeOut() oculta un elemento variando su opacidad, veamos su sintaxis extraída de su web oficial.</p>
+    </aside>   
+</div>
+<hr>
+<div class="Fadein">
+    <button id="Fadein">Fadein</button>
+    <aside>
+    <h1>Fadein</h1>
+    <p>muestra un elemento (anteriormente oculto) cambiando su opacidad, aquí tenéis su sintaxis extraída de su web oficial.</p>
+    </aside>   
+</div>
+<hr>
+<div class="After">
+    <button id="After">After</button>
+    <aside>
+    <h1>After</h1>
+    <p id="pafter">Su funcionalidad es la de añadir elementos después de otro elemento indicado dentro del DOM de una página web.</p>
+    </aside>   
+</div>
+<hr>
+<div class="Before">
+    <button id="Before">Before</button>
+    <aside>
+    <h1>Before</h1>
+    <p id="pbefore">Su funcionalidad es la de añadir elementos por delante de otros ya existentes dentro del DOM de una página web.</p>
+    </aside>   
+</div>
+<hr>
+<div class="Html">
+    <button id="Html">Html</button>
+    <aside>
+    <h1 id="h1html">Html</h1>
+    <p>podemos obtener código html de un nodo del DOM o asignárselo.<br>De esta manera podremos manipular de una manera fácil los diferentes elementos que hay en una página web.</p>
+    </aside>   
+</div>
+<hr>
+<div class="Attr">
+    <button id="Attr">Attr</button>
+    <aside>
+    <h1>Attr</h1>
+    <p>vale para obtener y/o modificar valores en los atributos de los diferentes elementos del DOM de una página web.</p>
+    </aside>   
+</div>
+<hr>
+<div class="Val">
+    <button id="Val">Val</button>
+    <aside>
+    <h1>Val</h1>
+    <p>podemos asignar u obtener valores de ciertos elementos del DOM de una web, estos elementos son los inputs de formularios y las etiquetas  select y textarea.</p>
+    </aside>   
+</div>
+<hr>
+<div class="Text">
+    <button id="Text">Text</button>
+    <aside>
+    <h1>Text</h1>
+    <p>Con  esta manera podemos obtener o asignar el texto que queramos a los diferentes elementos del DOM.</p>
+    </aside>   
+</div>
+</body>
+</html>

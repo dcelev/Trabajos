@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman Demo</title>
+    <link rel="stylesheet" href="pacman.css">
+</head>
+<body>
+
+    <div class="row">
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="coin"></div>
+        <div class="pacman"></div>
+        <div class="coin"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+    </div>
+
+
+lista de caracteristicas a construir
+1} js muestre el mundo
+2) hacer quen el pacman pueda moverse   
+<script>
+
+var world = [
+    [2,2,2,2,2,2,2,2,2,2],
+    [2,1,1,1,1,1,1,1,1,1],
+    [2,1,1,1,1,1,1,1,1,1],
+    [2,1,1,1,1,1,1,1,1,1],
+    [2,1,1,1,1,1,1,1,1,1],
+    [2,1,1,1,1,1,1,1,1,1],
+    [2,1,1,1,1,1,1,1,1,1],
+    [2,1,1,1,1,1,1,1,1,1],
+    [2,1,1,1,1,1,1,1,1,1]
+    ];
+
+function displayWorld(){
+    var output='';
+
+    for(var i=0; i<world.length; i++){
+        for(var j=0; j<world[i].length; j++){
+            outpot= output + world[i][j];
+        }
+    }
+    console.log(output);
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
