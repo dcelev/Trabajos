@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desaparecidos</title>
+    <link rel="stylesheet" href="desaparecidos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).hide();
+            })
+            $('#rest').click(function(){
+                $('.img').show();
+            })
+        })
+
+
+
+    </script>
+</head>
+<body>
+    <img class='img'src="img/1.png" alt="1">
+    <img class='img'src="img/2.png" alt="2">
+    <img class='img'src="img/3.png" alt="3">
+    <img class='img'src="img/4.png" alt="4">
+    <img class='img'src="img/5.png" alt="5">
+    <img class='img'src="img/6.png" alt="6">
+    <img class='img'src="img/7.png" alt="7">
+    <img class='img'src="img/8.png" alt="8">
+    <br>
+    <button id="rest"><strong>Restaurar</strong></button>
+</body>
+</html>

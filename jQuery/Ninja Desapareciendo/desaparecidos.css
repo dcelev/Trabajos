@@ -1,0 +1,21 @@
+body{
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 850px;
+    background-color: lightblue;
+}
+img{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+button{
+    width: auto;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-size: large;
+}
