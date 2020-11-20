@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor en/fuera</title>
+    <link rel="stylesheet" href="hover.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+            $('img').hover(function(){
+                $(this).attr('alt',$(this).attr('src'));  
+                $(this).attr('src',$(this).attr('data-alt-src'));  
+                $(this).attr('data-alt-src',$(this).attr('alt'));
+            });
+        });  
+    </script>
+
+
+</head>
+<body>
+
+    <img src='portada1.jpg' data-alt-src='portada4.jpg'/>
+    <img src='portada2.jpg' data-alt-src='portada5.jpg'/>
+    <img src='portada3.jpg' data-alt-src='portada6.jpg'/>   
+</body>
+</html>

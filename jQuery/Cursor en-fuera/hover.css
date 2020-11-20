@@ -1,0 +1,12 @@
+body{
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 1220px;
+}
+img{
+    margin-top: 100px;
+    width: 400px;
+    height: auto;
+    position: relative;
+    justify-content: center;   
+}
