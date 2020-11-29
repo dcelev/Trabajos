@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House GoT</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#Targaryen').click(function(){
+            url = 'https://anapioficeandfire.com/api/houses/378'
+            $.get(url, function(res){
+                console.log(res);
+            $('.Targaryen').append('<h1>House Details</hq>')
+            $('.Targaryen').append("<p>"+res.name+"</p>");
+            $('.Targaryen').append("<p>"+res.words+"</p>");
+            $('.Targaryen').append("<p>"+res.titles+"</p>");
+
+            }, 'json');
+        });
+        });
+    </script>
+<style>
+    body{
+margin: 0 auto;
+padding: 0px;
+max-width: 901px;
+}
+.img{
+    display: inline-block
+}
+img{
+    width: 200px;
+    height: 200px;
+    display: inline;
+    margin-top: 60px;
+}
+</style>
+</head>
+<body>
+    <div class="img">
+    <img id="stark" src="stark.jpg" alt="HouseStark">
+    <img id="Targaryen" src="targaryen.jpg" alt="HouseTargaryen">
+    <img src="lannister.jpg" alt="HouseLannister">
+    <img src="baratheon.png" alt="HouseBaratheon">
+</div>
+<section class="Targaryen"> 
+</section>
+</body>
+</html>
